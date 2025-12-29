@@ -1,0 +1,23 @@
+-------------------------
+Random Forest Regression
+-----------------------
+Dataset size: ~190,000 compounds
+Descriptors: RDKit 2D + Morgan fingerprints
+Train/Test split: 80/20
+
+Test R²: 0.31
+Test MSE: 1.40
+
+-------------------------
+Neural Network Regression
+-------------------------
+Architecture: Fully connected MLP
+Training R²: ~0.50
+Test R²: ~0.25
+Test MSE: ~1.53
+
+Note: Model shows overfitting due to noisy bioactivity data.
+
+Results show that Random Forest models generalize more robustly,
+while neural networks achieve higher training performance but
+require stronger regularization to avoid overfitting.
